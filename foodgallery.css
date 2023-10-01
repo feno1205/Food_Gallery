@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital@1&family=Crimson+Text:ital,wght@0,600;1,400&family=Dancing+Script:wght@400;700&family=Gloock&family=Kanit:wght@500&family=Lato:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Lobster&family=Poppins:wght@500&family=Roboto+Slab:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.header{
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(./images/restaurant.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Lilita One', cursive;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Lilita One', cursive;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: 'Lilita One', cursive;
+}
+.parent{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.col{ 
+    width: 400px;
+    height: 350px;
+    margin-top: 10px;
+    padding: 20px;
+    background:black;
+    animation-play-state: paused;
+}
+.col:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    background-color: rgba(7, 46, 13, 0.378);
+}
+h4{
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lilita One', cursive;
+}
+button{
+    margin: 25px;
+    padding: 10px;
+    background: transparent;
+    color: aquamarine;
+    border: aquamarine 1px solid;
+}
+button:hover{
+    color: white;
+    background-color: rgba(127, 255, 212, 0.445);
+}
+@media(max-width:900px){
+    a{
+        display: none;
+    }
+    .header{
+        height: 800px;
+    }
+    img{
+        width: 100%;
+        height: 150px;
+    }
+    .col{
+        width: 300px;
+        height: 270px;
+        margin: auto;
+    }
+    .content h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .parent{
+        flex-direction: column;
+        height: 1200px;
+    }
+}
